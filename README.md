@@ -1,6 +1,6 @@
 # Social Media Scheduler
 
-### Deployed in Netlify server: https://ornate-meringue-05ee12.netlify.app/
+### Deployed on Netlify server: https://ornate-meringue-05ee12.netlify.app/
 
 ### Technologies and npm packages used:
 * React
