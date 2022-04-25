@@ -1,0 +1,54 @@
+.verticalMenu {
+    @extend .mainOptionFont;
+    background-color: $mainBackgroundColor;
+    color: $mainWhiteColor;
+    min-width: 200px;
+    min-height: calc(100vh - 90px);
+    padding-top: 20px;
+
+    & .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+        color: $mainWhiteColor;
+        background-color: $mainBackgroundColor;
+        border: none;
+        padding: 0 16px 0 0;
+    }
+
+    & .MuiAccordion-root {
+        box-shadow: none;
+
+        & .MuiSvgIcon-root {fill: $mainWhiteColor;}
+
+        & .MuiAccordionDetails-root {
+            color: $mainWhiteColor;
+            background-color: $mainBackgroundColor;
+        }
+    }
+
+    & .css-15v22id-MuiAccordionDetails-root {padding: 0;}
+    & .css-o4b71y-MuiAccordionSummary-content, .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+        margin: 0;
+        min-height: none;
+    }
+
+    & .menuOption {
+        cursor: pointer;
+
+        &:hover {
+            background-color: $mainHoverColor;
+            color: $mainBlueColor;
+
+            svg path {fill: $mainBlueColor;}
+        }
+
+        &.primaryOption {padding: 16px;}
+
+        &.secondaryOption {padding: 10px 30px;}
+    }
+
+    & .MuiButtonBase-root {
+        &:hover {
+            background-color: $mainHoverColor;
+            color: $mainBlueColor;
+        }
+    }
+}

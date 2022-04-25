@@ -1,0 +1,87 @@
+.modal {
+    & .css-tlc64q-MuiPaper-root-MuiDialog-paper {
+        background-color: $mainBackgroundColor;
+        color: $mainWhiteColor;
+        min-height: 400px;
+        padding: 10px;
+    }
+    & .css-vqmohf-MuiButtonBase-root-MuiRadio-root {
+        color: $mainWhiteColor;
+
+        &.Mui-checked {color: $mainBlueColor;}
+    }
+    & .css-j204z7-MuiFormControlLabel-root {
+        & .MuiFormControlLabel-label.Mui-disabled, .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-disabled{
+            color: $mainWhiteColor;
+            opacity: 0.3;   
+        }
+    }
+
+    & .css-bdhsul-MuiTypography-root-MuiDialogTitle-root {
+        margin-bottom: 7px;
+        padding: 8px 17px;
+    }
+
+    & .css-1m9pwf3 {display: none;}
+
+    & .css-ypiqx9-MuiDialogContent-root {padding: 0 17px;}
+
+    &.editMode {
+        & .css-tlc64q-MuiPaper-root-MuiDialog-paper {min-height: 350px;}
+    }
+}
+
+.modalTooltip {
+    &.MuiTooltip-popper .css-ja5taz-MuiTooltip-tooltip {
+        margin: -5px 15px!important;
+        background-color: $mainBlueColor;
+    }
+}
+
+.modalCalendar {
+    &.react-datepicker {
+        &-wrapper {
+            border: none;
+            width: unset;
+            margin-bottom: 4px;
+        }
+    
+        &__input-container input {
+            border-radius: 3px;
+            border: none;
+            padding: 6px;
+    
+            &:focus-visible {
+                outline: 1px solid $mainBlueColor;
+                border: none;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.react-datepicker {
+    &__tab-loop {
+        position: fixed;
+        .react-datepicker-popper {margin-top: 5px; margin-left: 16px;}
+    }
+    &-popper {
+        position: unset!important;
+        & .react-datepicker__triangle {display: none;}
+    }
+}
+
+.modalTextArea {
+    &.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+        width: 100%;
+        margin-top: 25px;
+        border-color: transparent;
+        
+        &:hover {
+            & .css-1d3z3hw-MuiOutlinedInput-notchedOutline {border-color: $mainWhiteColor;}
+        }
+    }
+    & .css-1d3z3hw-MuiOutlinedInput-notchedOutline {border-color: $mainWhiteColor;}
+    & .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {color: $mainWhiteColor;}
+    & .Mui-focused fieldset {border: 1.5px solid $mainWhiteColor!important;}
+}

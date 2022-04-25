@@ -1,0 +1,22 @@
+.navigationBar {
+    &.MuiPaper-root {
+        @extend .flex-centered-column;
+        border-bottom: 0.2px solid $mainBlackColor;
+        box-shadow: none;
+        min-height: 70px;
+    }
+
+    & .css-19r6kue-MuiContainer-root {max-width: none;}
+    
+    &.css-hip9hq-MuiPaper-root-MuiAppBar-root {background-color: $mainBackgroundColor;}
+    
+    & .logoIcon {fill: $mainBlueColor;}
+    
+    & .MuiButton-text {@extend .mainFont;}
+
+    & .css-1q39md6-MuiButtonBase-root-MuiButton-root {
+        text-transform: none;
+        background-color: $mainBlueColor;
+        &:hover {background-color: $hoverButtonColor;}
+    }
+}

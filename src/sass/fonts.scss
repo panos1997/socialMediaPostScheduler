@@ -1,0 +1,23 @@
+.mainFont {
+    font-family: "Raleway",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mainHeaderFont {
+    font-family: "Raleway",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mainOptionFont {
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mainErrorFont {
+    @extend .mainFont;
+    color: $mainRedColor;
+    font-weight: 600;
+}

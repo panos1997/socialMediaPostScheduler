@@ -1,0 +1,63 @@
+.buttonCommonStyle {
+    @extend .mainFont;
+    height: 35px;
+    padding: 0 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 75px;
+}
+
+.mainButton {
+    @extend .buttonCommonStyle;
+    background-color: $mainBlueColor;
+    color: $mainWhiteColor;
+
+    &:hover {background-color: $hoverButtonColor;}
+
+    &.disabled {
+        cursor: not-allowed;
+        opacity: .4;
+    }
+}
+
+.roundedButton {
+    @extend .mainButton;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.outlinedButton {
+    @extend .buttonCommonStyle;
+    background-color: transparent;
+    border: 1px solid $mainRedColor;
+    color: $mainWhiteColor;
+
+    &:hover {
+        background-color: $mainRedColor;
+    }
+}
+
+.iconButton {
+    cursor: pointer;
+    padding: 5px;
+    
+    &:hover {
+        background-color: $mainHoverColor;
+        border-radius: 50%;
+    }
+}
+
+.datepickerButton {
+    @extend .outlinedButton;
+    border: 1px solid $mainWhiteColor;
+    &:hover {
+        background-color: $mainHoverColor;
+    }
+}
+
+.simpleButton {
+    color: $mainBlueColor;
+    cursor: pointer;
+}
