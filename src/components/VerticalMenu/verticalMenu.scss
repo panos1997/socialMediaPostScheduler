@@ -31,8 +31,9 @@
             margin: 0;
             min-height: none;
         }
-        & .MuiAccordionSummary-expandIconWrapper {margin-top: 5px;}
     }
+
+    & .MuiAccordionSummary-expandIconWrapper {margin-top: 3px;}
 
     & .menuOption {
         cursor: pointer;
