@@ -24,7 +24,7 @@ const NavigationBar = () => {
     <AppBar className="navigationBar" position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters className="flex-centered-space-between">
-          <div className='flex-start'>
+          <div className='navigationBar-content flex-start'>
             <IconWithText
               icon={<ScheduleSendIcon className='logoIcon' />}
               text='My Post Scheduler'

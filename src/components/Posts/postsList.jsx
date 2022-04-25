@@ -30,7 +30,7 @@ const PostsList = () => {
             <Grid container spacing={1} className='postsList-grid' sx={{overflow: 'hidden', wrap: "nowrap"}}>
                 {posts.map((post, index) => {
                     return(
-                        <Grid item xs={2} className='postsList-grid item' key={index}>
+                        <Grid item className='postsList-grid item' key={index}>
                             <Post postContent={post?.text} postDate={post?.date}/>
                         </Grid>
                     )

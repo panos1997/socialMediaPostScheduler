@@ -4,3 +4,105 @@
     svg path {fill: $mainBlueColor;}
 }
 .twitterIcon {fill: #1DA1F2!important;}
+
+// media queries for responsive design in smaller screens
+@media (max-width: 600px) {
+    .verticalMenu {
+        width: 130px;
+
+        & .menuOption {
+            &.primaryOption {
+                padding: 16px 8px;
+                & span {margin-left: 8px;}
+                & svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &.secondaryOption {
+                padding: 10px 6px;
+
+                & svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        & .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .react-datepicker__tab-loop .react-datepicker-popper{
+        margin-left: -48px!important;
+        margin-top: 250px!important;
+    }
+}
+
+@media (max-width: 400px) {
+    .verticalMenu {
+        font-size: 12px;
+        width: 100px;
+
+        & .menuOption {
+            &.primaryOption {
+                padding: 16px 2px;
+                & span {margin-left: 8px;}
+                & svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            &.secondaryOption {
+                & span {margin-left: 7px;}
+                & svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+
+    .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navigationBar {
+        font-size: 12px;
+        &-content {align-items: center;}
+    }
+
+    .mainHeaderFont {font-size: 15px;}
+}
+
+@media (max-width: 350px) {
+    .postsList-grid .item.MuiGrid-item {
+        width: 170px;
+        margin-left: 25px;
+
+        & .post {min-width: unset;}
+    } 
+
+    .MuiCardActions-root.MuiCardActions-spacing {
+        justify-content: center;
+        & button {min-width: 60px;}
+    }
+    & .navigationBar-content .mainButton {min-width: 115px;}
+    & .react-datepicker__time {
+        &-box {width: 65%!important;}
+        &-container {width: 60px!important;}
+        &-list-item {font-size: 9px;}
+    }
+}
+
+@media (max-width: 300px) {
+    .postsList-grid .item.MuiGrid-item {
+        width: 150px;
+        margin-left: 15px;
+    } 
+}

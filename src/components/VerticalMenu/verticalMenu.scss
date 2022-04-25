@@ -2,7 +2,7 @@
     @extend .mainOptionFont;
     background-color: $mainBackgroundColor;
     color: $mainWhiteColor;
-    min-width: 200px;
+    width: 200px;
     min-height: calc(100vh - 90px);
     padding-top: 20px;
 
@@ -26,9 +26,12 @@
 
     & .MuiAccordionDetails-root {padding: 0;}
 
-    & .MuiAccordionSummary-content.Mui-expanded {
-        margin: 0;
-        min-height: none;
+    & .MuiAccordionSummary-content {
+        &.Mui-expanded {
+            margin: 0;
+            min-height: none;
+        }
+        & .MuiAccordionSummary-expandIconWrapper {margin-top: 5px;}
     }
 
     & .menuOption {

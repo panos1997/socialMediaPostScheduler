@@ -18,7 +18,7 @@ const VerticalMenu = () => {
     // and we also remove the 'activeTab' class from any other option in case it was previously selected
     const onOptionClick = (e, option) => {
         [...document.getElementsByClassName('menuOption')].filter((option) => !option.isSameNode(e.target)).forEach((option) => option.classList.remove('activeTab'));
-        e.target.classList.add('activeTab');
+        document.getElementsByClassName(option)[0].classList.add('activeTab');
         dispatch({ type: 'schedulePost/setPostsCategory', payload: option });
     }
 
@@ -31,7 +31,7 @@ const VerticalMenu = () => {
                         text='Posts'
                         classes={{
                             wrapperClasses: 'menuOption primaryOption flex-centered-start',
-                            textClasses: 'margin-l-15'
+                            textClasses: 'margin-l-15 margin-t-3'
                         }}
                     />
                 </AccordionSummary>
@@ -43,7 +43,7 @@ const VerticalMenu = () => {
                         text='Scheduled'
                         extraProps={{onClick: (e) => onOptionClick(e, 'scheduled')}}
                         classes={{
-                            wrapperClasses: 'menuOption scheduledOption secondaryOption flex-centered-start',
+                            wrapperClasses: 'menuOption scheduled secondaryOption flex-centered-start',
                             textClasses: 'margin-l-15'
                         }}
                     />
@@ -52,7 +52,7 @@ const VerticalMenu = () => {
                         text='Sent'
                         extraProps={{onClick: (e) => onOptionClick(e, 'sent')}}
                         classes={{
-                            wrapperClasses: 'menuOption sentOption secondaryOption flex-centered-start',
+                            wrapperClasses: 'menuOption sent secondaryOption flex-centered-start',
                             textClasses: 'margin-l-15'
                         }}
                     />
@@ -61,7 +61,7 @@ const VerticalMenu = () => {
                         text='All'
                         extraProps={{onClick: (e) => onOptionClick(e, 'all')}}
                         classes={{
-                            wrapperClasses: 'menuOption sentOption secondaryOption flex-centered-start activeTab',
+                            wrapperClasses: 'menuOption all secondaryOption flex-centered-start activeTab',
                             textClasses: 'margin-l-15'
                         }}
                     />
