@@ -1,38 +1,38 @@
 .modal {
-    & .css-tlc64q-MuiPaper-root-MuiDialog-paper {
+    & .MuiPaper-root {
         background-color: $mainBackgroundColor;
         color: $mainWhiteColor;
         min-height: 400px;
         padding: 10px;
     }
-    & .css-vqmohf-MuiButtonBase-root-MuiRadio-root {
+    & .MuiRadio-root {
         color: $mainWhiteColor;
 
         &.Mui-checked {color: $mainBlueColor;}
     }
-    & .css-j204z7-MuiFormControlLabel-root {
-        & .MuiFormControlLabel-label.Mui-disabled, .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-disabled{
+    & .MuiFormControlLabel-root {
+        & .MuiFormControlLabel-label.Mui-disabled, .Mui-disabled{
             color: $mainWhiteColor;
-            opacity: 0.3;   
+            opacity: 0.3;
         }
     }
 
-    & .css-bdhsul-MuiTypography-root-MuiDialogTitle-root {
+    & .MuiTypography-h6.MuiDialogTitle-root {
         margin-bottom: 7px;
         padding: 8px 17px;
     }
 
-    & .css-1m9pwf3 {display: none;}
+    & .PrivateSwitchBase-input {display: none;}
 
-    & .css-ypiqx9-MuiDialogContent-root {padding: 0 17px;}
+    & .MuiDialogContent-root {padding: 0 17px;}
 
     &.editMode {
-        & .css-tlc64q-MuiPaper-root-MuiDialog-paper {min-height: 350px;}
+        & .MuiPaper-root {min-height: 350px;}
     }
 }
 
 .modalTooltip {
-    &.MuiTooltip-popper .css-ja5taz-MuiTooltip-tooltip {
+    &.MuiTooltip-popper .MuiTooltip-tooltip {
         margin: -5px 15px!important;
         background-color: $mainBlueColor;
     }
@@ -72,16 +72,16 @@
 }
 
 .modalTextArea {
-    &.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    &.MuiFormControl-root.MuiTextField-root.modalTextArea {
         width: 100%;
         margin-top: 25px;
         border-color: transparent;
         
         &:hover {
-            & .css-1d3z3hw-MuiOutlinedInput-notchedOutline {border-color: $mainWhiteColor;}
+            & .MuiOutlinedInput-notchedOutline {border-color: $mainWhiteColor;}
         }
     }
-    & .css-1d3z3hw-MuiOutlinedInput-notchedOutline {border-color: $mainWhiteColor;}
-    & .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {color: $mainWhiteColor;}
+    & .MuiOutlinedInput-notchedOutline {border-color: $mainWhiteColor;}
+    & .MuiOutlinedInput-root.MuiInputBase-root {color: $mainWhiteColor;}
     & .Mui-focused fieldset {border: 1.5px solid $mainWhiteColor!important;}
 }

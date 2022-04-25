@@ -6,7 +6,7 @@
     min-height: calc(100vh - 90px);
     padding-top: 20px;
 
-    & .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+    & .MuiButtonBase-root {
         color: $mainWhiteColor;
         background-color: $mainBackgroundColor;
         border: none;
@@ -24,8 +24,9 @@
         }
     }
 
-    & .css-15v22id-MuiAccordionDetails-root {padding: 0;}
-    & .css-o4b71y-MuiAccordionSummary-content, .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+    & .MuiAccordionDetails-root {padding: 0;}
+
+    & .MuiAccordionSummary-content.Mui-expanded {
         margin: 0;
         min-height: none;
     }

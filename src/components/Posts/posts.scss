@@ -7,11 +7,11 @@
             color: $mainWhiteColor;
         }
 
-        .css-46bh2p-MuiCardContent-root {padding: 16px 16px 0px 16px;}
+        .MuiCardContent-root {padding: 16px 16px 0px 16px;}
 
         & .item {margin-left: 35px;}
 
-        &.css-egz4i3-MuiGrid-root>.MuiGrid-item {
+        &.MuiGrid-root>.MuiGrid-item {
             min-width: 230px;
             max-width: 250px;
         }
