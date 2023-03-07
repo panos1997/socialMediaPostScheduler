@@ -9,7 +9,3 @@
 * Sass
 * React-datepicker
 * Moment.js
-
-### Instructions to run locally: 
-* npm install --force
-* npm start
